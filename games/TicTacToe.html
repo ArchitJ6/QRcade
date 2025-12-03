@@ -1,0 +1,79 @@
+<!doctype html><meta charset="utf-8"><title>XO</title><style>
+body{
+  margin:0;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  background:#000;
+}
+#b{
+  display:grid;
+  grid-template-columns:repeat(3,80px);
+  gap:2px;
+}
+button{
+  width:80px;height:80px;
+  font-size:40px;
+  background:#111;
+  color:#fff;
+  border:1px solid #555;
+}
+#msg{
+  color:#fff;
+  margin-top:10px;
+  font-family:sans-serif;
+  font-size:14px;
+  text-align:center;
+}
+</style>
+<div id="b"></div>
+<div id="msg"></div>
+<script>
+let B=document.getElementById("b"),
+    M=document.getElementById("msg"),
+    cells=[],turn,over;
+
+for(let i=0;i<9;i++){
+  let btn=document.createElement("button");
+  btn.onclick=()=>clickCell(i);
+  B.appendChild(btn);
+  cells.push(btn);
+}
+
+function reset(){
+  turn="X";
+  over=0;
+  M.textContent="Turn: X";
+  cells.forEach(c=>c.textContent="");
+}
+
+function check(){
+  let v=cells.map(c=>c.textContent),
+      L=[[0,1,2],[3,4,5],[6,7,8],
+         [0,3,6],[1,4,7],[2,5,8],
+         [0,4,8],[2,4,6]];
+  for(let s of L)
+    if(v[s[0]] && v[s[0]]===v[s[1]] && v[s[1]]===v[s[2]])
+      return v[s[0]]+" wins!";
+  if(v.every(x=>x))return "Draw";
+  return "";
+}
+
+function clickCell(i){
+  if(over){ reset(); return; }
+  if(cells[i].textContent) return;
+  cells[i].textContent=turn;
+  let r=check();
+  if(r){
+    over=1;
+    M.textContent=r+" (click any cell to restart)";
+  }else{
+    turn = (turn==="X") ? "O" : "X";
+    M.textContent="Turn: "+turn;
+  }
+}
+
+reset();
+</script>
