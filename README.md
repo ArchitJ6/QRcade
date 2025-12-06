@@ -80,8 +80,7 @@ A simple, smooth, circle-bird flappy clone optimized for QR.
 ![FlappyBird QR](outputs/FlappyBird/qr.png)
 
 **🎥 Demo Video:**
-
-<video src="assets/FlappyBird.mp4" controls style="max-width: 100%;"></video>
+![FlappyBird Demo](assets/FlappyBird.gif)
 
 ---
 
