@@ -77,9 +77,11 @@ pip install -r requirements.txt
 A simple, smooth, circle-bird flappy clone optimized for QR.
 
 **Scan to play:**
+
 ![FlappyBird QR](outputs/FlappyBird/qr.png)
 
 **🎥 Demo Video:**
+
 ![FlappyBird Demo](assets/FlappyBird.gif)
 
 ---
@@ -89,6 +91,7 @@ A simple, smooth, circle-bird flappy clone optimized for QR.
 A lightweight grid-based Snake game in pure HTML/JS.
 
 **Scan to play:**
+
 ![SnakeGame QR](outputs/SnakeGame/qr.png)
 
 ---
@@ -98,6 +101,7 @@ A lightweight grid-based Snake game in pure HTML/JS.
 Classic XO with alternating turns and restart.
 
 **Scan to play:**
+
 ![TicTacToe QR](outputs/TicTacToe/qr.png)
 
 ---
