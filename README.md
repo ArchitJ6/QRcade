@@ -32,6 +32,7 @@ Just scan → play.
 QRcade/
 │
 ├── app.py                       # Main converter script
+├── requirements.txt             # Dependencies
 │
 ├── games/                       # HTML games
 │   ├── FlappyBird.html
@@ -42,6 +43,26 @@ QRcade/
     ├── FlappyBird/
     ├── SnakeGame/
     └── TicTacToe/
+```
+
+---
+
+## 📥 Installation
+
+### 📦 **Clone the repository**
+
+```bash
+git clone https://github.com/ArchitJ6/QRcade.git
+cd QRcade
+```
+
+### 🔧 **Install dependencies**
+
+QRcade uses Python for compression, encoding, and QR image generation.
+Install everything from `requirements.txt`:
+
+```bash
+pip install -r requirements.txt
 ```
 
 ---
