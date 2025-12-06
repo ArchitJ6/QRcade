@@ -72,12 +72,16 @@ pip install -r requirements.txt
 > ⚠️ After running `app.py`, each game will have its own `qr.png` here:
 > `outputs/<GameName>/qr.png`. Update paths below if needed.
 
-### 🐦 **FlappyBird (Minimal Smooth Edition)**
+### 🐦 **FlappyBird**
 
 A simple, smooth, circle-bird flappy clone optimized for QR.
 
 **Scan to play:**
 ![FlappyBird QR](outputs/FlappyBird/qr.png)
+
+**🎥 Demo Video:**
+
+<video src="assets/FlappyBird.mp4" controls style="max-width: 100%;"></video>
 
 ---
 
